@@ -6,7 +6,7 @@ let transporter = nodemailer.createTransport({
     port: 587,
     secure: false, // true for 465, false for other ports
     auth : {
-        user : '--',
+        user : '--', // input user / pass from mail service
         pass : '--',
     },
     tls: {
@@ -17,7 +17,7 @@ let transporter = nodemailer.createTransport({
 let video = fs.readFileSync('../Kafka_Home/Kafka_Internet.mp4');
 
 let mailOptions = {
-    from: '--',
+    from: '--', //input sender and reciveer
     to: '--',
     subject: 'Kafka Ultimate Home',
     text: 'Indi Home Phaket phoenix',
